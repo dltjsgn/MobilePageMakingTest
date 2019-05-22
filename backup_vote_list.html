@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Blockchain Voting</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+	<style>
+		html,
+		body {
+			width: 98%;
+			height: 98%;
+		}
+
+		#downtable {
+			text-align: center;
+			width: 100%
+		}
+
+		.downbar {
+			width: 30%;
+
+			border: "1";
+		}
+
+		body {
+			text-align: center;
+			< !__background: url('img/background.jpg') no-repeat center center fixed;
+			__>-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		header,
+		footer,
+		nav,
+		aside,
+		section,
+		#wrap {
+			border: 1px solid #999;
+			margin: 5px;
+			padding: 10px;
+		}
+
+		header {
+			font-size: 30px;
+			height: 30px;
+		}
+
+		section {
+			height: 80%;
+		}
+
+		.fixed {
+			height: 100px;
+			width: 90%;
+			position: fixed;
+			left: 0;
+			bottom: 0;
+		}
+
+
+		h1 {
+			font-size: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		현재 투표 목록
+	</header>
+	<section>
+		<h2>내용 영역</h2>
+	</section>
+	<div id="wrap">
+		<div class="contents">
+			<center>
+				<table id="downtable">
+					<td class="downbar"><input type="button" value="홈 화면" onclick="location.href='index.html'"></td>
+					<td class="downbar"><input type="button" value="투표 리스트" onclick="location.href='vote_list.html'"></td>
+					<td class="downbar"><input type="button" value="새 투표"></td>
+			</center>
+			</table>
+		</div>
+		<div class="fixed">
+		</div>
+	</div>
+</body>
+
+</html>

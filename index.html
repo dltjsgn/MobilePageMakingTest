@@ -6,30 +6,39 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
 	<style>
+		html,
+		body {
+			width: 98%;
+			height: 97%;
+		}
+
 		body {
 			text-align: center;
 			background: url('img/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 		}
 
 		table {
-			width : 60%
-			height: 130px;
+			width: 60% height: 130px;
 			margin: auto;
 			text-align: center
 		}
-<!__
-		table, th, td{
+
+		< !__ table,
+		th,
+		td {
 			border: 1px solid #bcbcbc;
 		}
-__>
 
-		.can{
-			width : 67%
-			height : 80px
+		__>
+		.can {
+			width: 67%; height: 40px
+		}
+		.butt{
+			width: 60%;
 		}
 
 		}
@@ -39,11 +48,11 @@ __>
 <body>
 	<div>
 
-		<h1> 6조 투표앱</h1>
+		<h1 style="color:white"> 6조 투표앱</h1>
 
 	</div>
 	<div>
-
+	<br><br>
 		<img src="img/main_logo.png">
 
 	</div>
@@ -72,7 +81,12 @@ __>
 	</div>
 	<br>
 	<div>
-		<center><input type="submit" onclick="location.href='vote_list.html'"></center>
+		<center>
+		<table>
+		<td class = "butt"><input type="button" value="signup" onclick="location.href='signup.html'"></td>
+		<td class = "butt"><input type="submit" value="login" onclick="location.href='vote_list.html'"></td>
+	</table>
+	</center>
 	</div>
 
 </body>
