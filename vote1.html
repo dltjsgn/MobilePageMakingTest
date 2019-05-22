@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Blockchain Voting</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+	<style tyle="text/css">
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		#wrapper {
+			position: relative;
+			min-height: 100%;
+		}
+
+		#header {
+			line-height: 70px;
+			font-size: 25px;
+			height: 70px;
+			background: #ccc;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		#container {
+			padding: 20px;
+		}
+
+		#footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 70px;
+			background: #ccc;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">대통령 선거(투표 제작자가 정한 제목)</div>
+		<div id="container">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>후보자</th>
+						<th>투표 허쉴?</th>
+						<th>투표 수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Rama</td>
+						<td><input type="radio" name="pickme" value="Rama"></td>
+						<td id="candidate-1"></td>
+					</tr>
+					<tr>
+						<td>Nick</td>
+						<td><input type="radio" name="pickme" value="Nick"></td>
+						<td id="candidate-2"></td>
+					</tr>
+					<tr>
+						<td>Jose</td>
+						<td><input type="radio" name="pickme" value="Jose"></td>
+						<td id="candidate-3"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<center>
+					<input type="submit" value="너로 정했다">
+				</center>
+			</div>
+		</div>
+		<div id="footer">
+			<br>
+			<center>
+				<table id="downtable">
+					<td class="downbar"><input type="button" value="홈 화면" onclick="location.href='index.html'"></td>
+					<td class="downbar"><input type="button" value="투표 리스트" onclick="location.href='vote_list.html'"></td>
+					<td class="downbar"><input type="button" value="새 투표" onclick="location.href='newvote.html'"></td>
+				</table>
+			</center>
+		</div>
+</body>
+
+</html>
